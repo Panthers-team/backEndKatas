@@ -1,5 +1,7 @@
 package supermarketKata;
 
+import java.util.List;
+
 public class PricedProduct {
     String productName;
     int productPrice;
