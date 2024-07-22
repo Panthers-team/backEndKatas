@@ -33,14 +33,14 @@ mvn spring-boot:run
 * **Sample Call:** _http://localhost:2012/list-rovers_
 
 
-### Find Rover
-  _Receives a request and returns a Rover by a given id._
+### Find rover
+  _Receives a request and returns a rover by a given id._
 * **URL:** /rover/{id}
 * **Method:** `GET` 
 *  **URL Params**
    **Required:** `id=[integer]`
 * **Success Response:** 
-    _Response that may contain the deployed Rover._
+    _Response that may contain the deployed rover._
   * **Code:** 200 <br />
     **Content:** 
 ```json
@@ -59,8 +59,8 @@ mvn spring-boot:run
 ```
 * **Sample Call:** _http://localhost:2012/rover/1_
 
-### Execute Rover
-  _Executes commands for a specific Rover._
+### Execute rover
+  _Executes commands for a specific rover._
 * **URL:** /rover/{id}
 * **Method:** `POST` 
 *  **URL Params**
@@ -74,8 +74,8 @@ mvn spring-boot:run
 ![Log execution](images/execute_rover_log.png "Log execution")
 * **Sample Call:** _http://localhost:2012/rover/1_
 
-### Turn on Rover
-  _Turns the Rover on._
+### Turn on rover
+  _Turns the rover on._
 * **URL:** _/turn-on-rover/{id}_
 * **Method:** `GET` 
 *  **URL Params**
@@ -86,16 +86,16 @@ mvn spring-boot:run
   * **Code:** 200 <br />
     **Content:** 
     ```text
-    Rover 1 is now running!
+    rover 1 is now running!
     `````
     or if it is already turned on:
     ```text
-    Rover 1 is already turned on.
+    rover 1 is already turned on.
     `````
 * **Sample Call:** _http://localhost:2012/turn-on-rover/1_
 
-### Turn off Rover
-  _Turns the Rover off._
+### Turn off rover
+  _Turns the rover off._
 * **URL:** _/turn-off-rover/{id}_
 * **Method:** `GET` 
 *  **URL Params**
@@ -106,16 +106,16 @@ mvn spring-boot:run
   * **Code:** 200 <br />
     **Content:** 
     ```text
-    Rover 1 is now stopped!
+    rover 1 is now stopped!
     `````
     or if it is already turned off:
     ```text
-    Rover 1 is already turned off.
+    rover 1 is already turned off.
     `````
 * **Sample Call:** _http://localhost:2012/turn-off-rover/1_
 
-### Deploy Rover
-  _Deploys a new Rover to Mars._
+### Deploy rover
+  _Deploys a new rover to Mars._
 * **URL:** /deploy_rover
 * **Method:** `POST` 
 * **Data Params:** 
@@ -131,7 +131,7 @@ mvn spring-boot:run
 }
 ```
 * **Success Response:** 
-    _The deployed Rover._
+    _The deployed rover._
   * **Code:** 200 <br />
     **Content:** 
 ```json
@@ -148,6 +148,6 @@ mvn spring-boot:run
     "x": 9
 }
 ```
-**Tip**: If Rover has already been deployed, it will update the modified parameters.
+**Tip**: If rover has already been deployed, it will update the modified parameters.
 
 
