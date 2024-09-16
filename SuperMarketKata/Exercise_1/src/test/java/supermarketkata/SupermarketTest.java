@@ -13,7 +13,11 @@ class SupermarketTest {
 
     @Test
     public void priceSummary() {
-        PricedProduct pricedProduct = new PricedProduct("water", 20);
-        assertEquals(Supermarket.calculateSummary(List.of(pricedProduct)), 0);
+        List<PricedProduct> products = List.of(
+                new PricedProduct("water", 20),
+                new PricedProduct("bread", 40),
+                new PricedProduct("fruit", 35)
+        );
+        assertEquals(95, Supermarket.calculateSummary(products));
     }
 }
